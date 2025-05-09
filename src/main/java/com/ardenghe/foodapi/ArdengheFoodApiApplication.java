@@ -8,6 +8,6 @@ public class ArdengheFoodApiApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ArdengheFoodApiApplication.class, args);
+        System.out.println("Welcome to FoodApi!");
     }
-
 }
