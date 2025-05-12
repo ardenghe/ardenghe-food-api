@@ -3,6 +3,7 @@ package com.ardenghe.foodapi.di.notificacao;
 import com.ardenghe.foodapi.di.model.Cliente;
 import org.springframework.stereotype.Component;
 
+@TipoDoNotificador(NivelUrgencia.SEM_URGENCIA)
 @Component
 public class NotificadorEmail implements Notificador {
 
