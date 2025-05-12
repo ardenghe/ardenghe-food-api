@@ -4,18 +4,18 @@ import com.ardenghe.foodapi.di.model.Cliente;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
-@Profile("prod")
+@Profile("dev")
 @TipoDoNotificador(NivelUrgencia.SEM_URGENCIA)
 @Component
-public class NotificadorEmail implements Notificador {
+public class NoticadorEmailMock implements Notificador {
 
-    public NotificadorEmail() {
-        System.out.println("NotificadorEmail Real");
+    public NoticadorEmailMock() {
+        System.out.println("NoticadorEmail Mock");
     }
 
     @Override
     public void notificar(Cliente cliente, String mensagem) {
-        System.out.printf("Notificando %s através do e-mail %s: %s\n",
+        System.out.printf("MOCK: Notificação seria enviada para %s através do e-mail %s: %s\n",
                 cliente.getNome(), cliente.getEmail(), mensagem);
     }
 }
