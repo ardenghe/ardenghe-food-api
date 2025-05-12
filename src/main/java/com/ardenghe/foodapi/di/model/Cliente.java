@@ -1,5 +1,7 @@
 package com.ardenghe.foodapi.di.model;
 
+import org.springframework.web.bind.annotation.GetMapping;
+
 public class Cliente {
 
     private String nome;
@@ -13,14 +15,17 @@ public class Cliente {
         this.telefone = telefone;
     }
 
+    @GetMapping
     public String getNome() {
         return nome;
     }
 
+    @GetMapping
     public String getEmail() {
         return email;
     }
 
+    @GetMapping
     public String getTelefone() {
         return telefone;
     }
