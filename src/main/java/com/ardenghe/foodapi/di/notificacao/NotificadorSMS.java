@@ -1,7 +1,6 @@
 package com.ardenghe.foodapi.di.notificacao;
 
 import com.ardenghe.foodapi.di.model.Cliente;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @TipoDoNotificador(NivelUrgencia.URGENTE)
